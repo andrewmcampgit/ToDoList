@@ -15,6 +15,25 @@ function createNewTask() {
         alert(xhr.responseJSON.Message)
     })
 }
+//not done with create User
+function createNewUser() {
+    var userName = $("#userName").val();
+    var userFIRSTNAME = $("#firstName").val();
+    var userLASTNAME = $("#lastName").val();
+    $.ajax({
+        url: "https://grillberc2.azurewebsites.net/api/v1/Users",
+        method: "POST",
+        data: {
+            "Username": userName,
+            "FirstName": userFIRSTNAME,
+            "LastName": userLASTNAME
+            
+          }
+
+    }).done(function (data) {
+        usernameOption();
+    })
+}
 
 function usernameOption() {
     $.ajax("https://grillberc2.azurewebsites.net/api/v1/Users")
@@ -54,7 +73,7 @@ function renderTaskstoPage() {
 }
 
 $(function () {
-    $("#newTaskBtn").click(createNewTask)
+    $("#newTaskButton").click(createNewTask)
     renderTaskstoPage();
     usernameOption();
 })
