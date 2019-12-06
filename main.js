@@ -38,6 +38,7 @@ function renderTaskstoPage() {
             for (let task of data) {
                 let pElem = $("<p>")
                 pElem.text(task.TaskBody)
+
                 dataDropLocElem.append(pElem);
 
 

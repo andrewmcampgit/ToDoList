@@ -12,22 +12,28 @@
 
 <body>
     <div id="newTaskSection">
-        <label> New Task Body</label>
+        <label>New Task Body</label>
         <form>
             <input id="newTaskBody" placeholder="E.g. Get a grillfriend">
 
             <br><br>
-            <select id="selectedUserName">
-            </select>
-            <br>
+            <label>Create a new username:</label><br>
+            
+            <input id="createNewUser" placeholder="E.g. Grillberto47"><br><br>
+            
+            <label>Select a username:</label><br>
+            
+            <select id="selectedUserName"></select><br><br>
+            
+        <button id="newTaskBtn"class="buttonSubmit">Submit New Task</button>
     </div>
-    <br>
-    <button id="newTaskBtn">Submit New Task</button>
+    
     <br><br>
     </form>
     
     <div id="dataDropLoc">
         <i class="fas fa-spinner fa-spin fa-10x"></i>
+        
     </div>
 
 </body>

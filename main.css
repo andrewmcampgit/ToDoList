@@ -1,7 +1,7 @@
 body{
 	display: block;
 	margin-right: auto;
-	margin-left: auto;
+    margin-left: auto;
 	background-color: rgb(196, 108, 108);
 	border-radius: 10px;
 	width: 800px;
@@ -9,6 +9,22 @@ body{
 	z-index: 0;
     padding: 20px;
     font-family:Arial ;
+}
+
+h1{
+    text-align: center;
+}
+
+p:hover {
+    background-color: yellow;
+  }
+
+.buttonSubmit{
+    
+ color: rgb(117, 14, 177);
+ text-transform: uppercase;
+ border: 1px solid rgb(0, 0, 0);
+background-color: aqua;
 }
 
 div{
